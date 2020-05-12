@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UFO Sightings</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.css" crossorigin="anonymous" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-header my-5" id="banner">
+                    <h1 class="text-center"><strong>UFO Sightings</strong></h1>
+                </div>
+            </div>
+            <div class="row mr-auto ml-auto">
+                <form id="form">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="shape-form-select">Shape</label>
+                                <select class="form-control text-center" id="shape-form-select" name="shape-form">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="city-form-select">City</label>
+                                <select class="form-control text-center" id="city-form-select" name="city-form">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="state-form-select">State</label>
+                                <select class="form-control text-center" id="state-form-select" name="state-form">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="country-form-select">Country</label>
+                                <select class="form-control text-center" id="country-form-select" name="country-form">
+                                </select>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="form-group ml-auto mr-auto">
+                        <label for="date-form-input">Date</label>
+                        <input class="form-control" id="date-form-input" name="date-form" type="date">
+                    </div>
+                    <div class="ml-auto mr-auto text-center">
+                        <button id="button" type="button" class="btn btn-outline-success mr-auto ml-auto text-center">Enter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <table class="table table-hover mt-4">
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <!--If we were to take out the Duration column-->
+                    <!--<th>Duration</th>-->
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+</html>
